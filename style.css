@@ -133,14 +133,27 @@ section > h2 { font-size: 28px; margin-bottom: 24px; }
 .year { font-size: 15px; color: var(--muted); font-weight: 600; margin: 24px 0 8px; }
 .pubs { list-style: none; padding: 0; margin: 0; }
 .pubs li {
-  display: flex; gap: 16px; padding: 14px 0;
+  display: flex; gap: 20px; padding: 18px 0;
   border-bottom: 1px dashed var(--border);
 }
+.thumb {
+  flex: none; width: 200px; height: 125px; border-radius: 8px;
+  border: 1px solid var(--border); background: #fff; overflow: hidden;
+  display: block; position: relative;
+}
+.thumb img { width: 100%; height: 100%; object-fit: contain; padding: 6px; display: block; }
+a.thumb:hover { border-color: var(--accent); }
+.thumb-empty { background: var(--accent-soft); border-style: dashed; display: flex; align-items: center; justify-content: center; }
+.thumb-empty span {
+  font-family: "Source Serif 4", Georgia, serif; font-size: 18px; font-weight: 600;
+  color: var(--accent); text-align: center; padding: 0 12px; opacity: .8;
+}
+.pub-body { min-width: 0; }
 .pubs li:last-child { border-bottom: none; }
 .venue {
-  flex: none; width: 128px; align-self: flex-start;
-  font-size: 12px; font-weight: 700; text-align: center;
-  padding: 4px 8px; border-radius: 6px;
+  display: inline-block; margin-bottom: 4px;
+  font-size: 12px; font-weight: 700;
+  padding: 2px 8px; border-radius: 6px;
   background: var(--accent-soft); color: var(--accent);
 }
 .pubs p { margin: 0; }
@@ -191,8 +204,9 @@ footer {
   .hero { flex-direction: column; gap: 24px; padding-top: 40px; }
   .avatar { width: 112px; height: 112px; font-size: 40px; }
   .hero h1 { font-size: 30px; }
-  .pubs li { flex-direction: column; gap: 6px; }
-  .venue { width: auto; }
+  .pubs li { flex-direction: column; gap: 10px; }
+  .thumb { width: 100%; height: 180px; }
+  .thumb-empty { display: none; }
   .item-head { flex-direction: column; gap: 4px; }
   .meta { text-align: left; flex-direction: row; gap: 12px; }
   .edu { grid-template-columns: 1fr; }
