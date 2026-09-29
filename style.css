@@ -144,9 +144,9 @@ section > h2 { font-size: 28px; margin-bottom: 24px; }
     border-bottom-color: transparent; border-radius: 12px;
   }
   .pubs li:hover .venue { background: var(--surface); }
+  .pubs li:hover .pub-title a { color: var(--accent); }
+  .pubs li:hover .thumb { border-color: var(--accent); }
 }
-.pubs li:hover .pub-title a { color: var(--accent); }
-.pubs li:hover .thumb { border-color: var(--accent); }
 .thumb {
   flex: none; width: 200px; height: 125px; border-radius: 8px;
   border: 1px solid var(--border); background: #fff;
