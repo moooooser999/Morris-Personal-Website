@@ -24,4 +24,4 @@ python3 -m http.server 8000
 
 - **Photo**: replace `avatar.jpg` (square, ~480×480).
 - **CV download**: add your PDF (e.g. `cv.pdf`) and a link button in the `.links` block. Consider removing your phone number from the public copy.
-- **Paper links**: wrap a `.pub-title` in `<a href="...">` once arXiv / ACL Anthology links are available.
+- **Paper links**: each publication has a linked title plus a `.pub-links` row (Paper / arXiv / Code).
