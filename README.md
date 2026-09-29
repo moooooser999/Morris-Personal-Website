@@ -23,5 +23,5 @@ python3 -m http.server 8000
 ## Customizing
 
 - **Photo**: replace `avatar.jpg` (square, ~480×480).
-- **CV download**: add your PDF (e.g. `cv.pdf`) and a link button in the `.links` block. Consider removing your phone number from the public copy.
+- **CV download**: replace `Morris_CV.pdf` (the public copy has the phone number removed).
 - **Paper links**: each publication has a linked title plus a `.pub-links` row (Paper / arXiv / Code).
