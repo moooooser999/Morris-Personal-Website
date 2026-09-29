@@ -1,4 +1,4 @@
-# Wen Yu (Morris) Chang — Personal Website
+# Wen Yu Chang — Personal Website
 
 Static personal academic website (plain HTML + CSS, no build step).
 
@@ -18,7 +18,7 @@ python3 -m http.server 8000
 
 1. Merge into `main`.
 2. Repo **Settings → Pages → Build and deployment**: Source = *Deploy from a branch*, Branch = `main` / `(root)`.
-3. The site will be live at `https://moooooser999.github.io/Morris-Personal-Website/`.
+3. The site will be live at `https://moooooser999.github.io/`.
 
 ## Customizing
 
