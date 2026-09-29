@@ -133,9 +133,20 @@ section > h2 { font-size: 28px; margin-bottom: 24px; }
 .year { font-size: 15px; color: var(--muted); font-weight: 600; margin: 24px 0 8px; }
 .pubs { list-style: none; padding: 0; margin: 0; }
 .pubs li {
-  display: flex; gap: 20px; padding: 18px 0;
+  display: flex; gap: 20px; padding: 18px 12px; margin: 0 -12px;
   border-bottom: 1px dashed var(--border);
+  transition: background-color .2s ease, box-shadow .2s ease;
 }
+@media (hover: hover) {
+  .pubs li:hover {
+    background: var(--accent-soft);
+    box-shadow: inset 3px 0 0 var(--accent);
+    border-bottom-color: transparent; border-radius: 12px;
+  }
+  .pubs li:hover .venue { background: var(--surface); }
+}
+.pubs li:hover .pub-title a { color: var(--accent); }
+.pubs li:hover .thumb { border-color: var(--accent); }
 .thumb {
   flex: none; width: 200px; height: 125px; border-radius: 8px;
   border: 1px solid var(--border); background: #fff;
@@ -231,7 +242,7 @@ footer {
   .skills dd { margin-bottom: 10px; }
 }
 
-.pub-title a { color: var(--text); }
+.pub-title a { color: var(--text); transition: color .2s ease; }
 .pub-title a:hover { color: var(--accent); }
 .pub-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px !important; }
 .pub-links a {
