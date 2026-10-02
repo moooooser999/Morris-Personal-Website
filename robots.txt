@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moooooser999.github.io/sitemap.xml
